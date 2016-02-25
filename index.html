@@ -6,20 +6,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   </head>
   <body ng-controller="mainController">
-    <div class="page-header">
-      <h1>OMDb Movie App <small>Search for your faves flicks by title!</small></h1>
-    </div>
-    <form id="searchForm">
-      <input type="text" id="movieTitle" required placeholder="Movie Title e.g:Legally Blonde" ng-model="movieTitle">
-      <button type="submit" value="Search Here" ng-click="findMovies(this)">Search</button>
-    </form>
-    <div class="movieLoop" ng-repeat="movie in movieResults">
-      <h5>hellooooooooooo mother f</h5>
-      <img ng-src="{{movie.Poster}}">
-    <!-- <div ng-view></div> -->
+    <div ng-view></div>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/controllers/main_controller.js"></script>
+    <script type="text/javascript" src="js/controllers/movies_controller.js"></script>
   </body>
 </html>
