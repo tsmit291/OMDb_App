@@ -5,6 +5,6 @@
   <input type="text" id="movieTitle" required placeholder="Movie Title e.g:Legally Blonde" ng-model="movieTitle">
   <button type="submit" value="Search Here" ng-click="findMovies(this)">Search</button>
 </form>
-<div class="movieLoop" ng-repeat="movie in movieResults">
-  <img ng-src="{{movie.Poster}}" class="img-rounded">
+<div class="movieLoop col-lg-5" ng-repeat="movie in movieResults">
+  <img ng-src="{{movie.Poster}}" class="img-rounded moviePict">
 </div>
