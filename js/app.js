@@ -7,4 +7,8 @@ app.config(function($routeProvider){
     templateUrl: './partials/home.html',
     controller: 'mainController'
   })
+  .when('/movies/:imdbID/', {
+    templateUrl: './partials/movie.html',
+    controller: 'movieController'
+  })
 });

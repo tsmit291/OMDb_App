@@ -5,8 +5,8 @@ html {
 .moviePict {
   width: 150px;
   height: 205px;
-  padding: 7%;
-  border-radius: 4px;
+  /*padding: 7%;
+  border-radius: 4px;*/
 }
 
 .movieLoop {

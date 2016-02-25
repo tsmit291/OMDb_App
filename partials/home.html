@@ -9,6 +9,6 @@
 
 <div class="movieLoop col-lg-10">
   <div class="col-lg-5" ng-repeat="movie in movieResults">
-    <img ng-src="{{movie.Poster}}" class="moviePict">
+    <a href="/#/movies/{{movie.imdbID}}"><img src='{{movie.Poster}}' class="moviePict"></a>
   </div>
 </div>
