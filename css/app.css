@@ -9,6 +9,10 @@ html {
   border-radius: 4px;*/
 }
 
+.page-header {
+  text-align: center;
+}
+
 .movieLoop {
   display: flex;
   flex-direction: row;

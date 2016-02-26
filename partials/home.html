@@ -1,11 +1,18 @@
 <div class="page-header">
-  <h1>OMDb Movie App <small>Search for your faves flicks by title!</small></h1>
+  <h1>OMDb Movie App<br><small>Search for your faves flicks by title!</small>
+  </h1>
+  <form id="searchForm">
+    <input type="text" id="movieTitle" required placeholder="Movie Title e.g:Legally Blonde" ng-model="movieTitle">
+    <button type="submit" value="Search Here" ng-click="findMovies(this)">Search</button>
+  </form>
+  <form id="filterBy">
+    <h4>Sort By</h4>
+    <input type="radio"> Episode
+    <input type="radio"> Season
+    <input type="radio"> Both
+  </form>
 </div>
 
-<form id="searchForm">
-  <input type="text" id="movieTitle" required placeholder="Movie Title e.g:Legally Blonde" ng-model="movieTitle">
-  <button type="submit" value="Search Here" ng-click="findMovies(this)">Search</button>
-</form>
 
 <div class="movieLoop col-lg-10">
   <div class="col-lg-5" ng-repeat="movie in movieResults">
